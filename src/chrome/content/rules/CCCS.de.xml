@@ -1,0 +1,7 @@
+<ruleset name="CCC Stuttgart" default_off="cacert">
+  <target host="*.cccs.de" />
+  <target host="cccs.de" />
+
+  <rule from="^http://cccs\.de/" to="https://www.cccs.de/"/>
+  <rule from="^http://([^/:@\.]+)\.cccs\.de/" to="https://$1.cccs.de/"/>
+</ruleset>
